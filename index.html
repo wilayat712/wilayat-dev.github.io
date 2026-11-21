@@ -1,1 +1,277 @@
-html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        
+<nav>
+
+    <h2 class="logo">MyPortfolio</h2>
+
+    <button id="menu-toggle"
+            class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="main-nav">
+        ☰
+    </button>
+
+    <ul id="main-nav" class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+    <button id="theme-toggle"
+            class="theme-toggle"
+            type="button">
+        ☀️ Light Mode
+    </button>
+</ul>
+
+</nav>
+
+    </header>
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span>Wilayat Ullah</span></h1>
+        <h2>Future Web Developer</h2>
+        <p>Welcome to my personal portfolio website.</p>
+        <a href="#about" class="btn">Explore More</a>
+    </section>  
+<section id="about" class="content-card">
+
+    <div class="about-layout">
+
+        <!-- Profile Avatar -->
+        <div class="profile-avatar">
+            <img src="profile.jpg"
+     alt="My profile photo"
+     class="profile-avatar">
+        </div>
+
+        <!-- About Information -->
+        <div class="about-info">
+
+            <h2>About Me</h2>
+
+            <h3>Wilayat Ullah</h3>
+
+            <p class="role">
+                Aspiring Web Developer
+            </p>
+
+            <p>
+                I am a passionate learner interested
+                in technology, creativity and web
+                development. I enjoy learning new
+                skills and building creative projects.
+            </p>
+
+            <div class="learning-badge">
+                Currently Learning HTML, CSS
+                and JavaScript
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <section id="skills"
+      class="content-card">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Graphic Designing</span>
+    <span>MS Word</span>
+        </div>
+    </section>
+
+<!-- PROJECTS SECTION -->
+
+<section id="projects" class="content-card">
+
+    <h2>My Projects</h2>
+
+    <p class="projects-intro">
+        Here are some of my creative and
+        development projects.
+    </p>
+
+    <div class="project-grid">
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">🌐</div>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                My first personal website built
+                using HTML, CSS and JavaScript.
+            </p>
+
+            <span class="project-status">
+                Currently Building
+            </span>
+
+            <a href="#contact" class="project-btn">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">🎨</div>
+
+            <h3>Graphic Designing</h3>
+
+            <p>
+                A collection of creative designs,
+                digital artwork and visual ideas.
+            </p>
+
+            <span class="project-status">
+                Creative Work
+            </span>
+
+            <a href="#contact" class="project-btn">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">💻</div>
+
+            <h3>Future Web Projects</h3>
+
+            <p>
+                Exciting web development projects
+                that I plan to build in the future.
+            </p>
+
+            <span class="project-status">
+                Coming Soon
+            </span>
+
+            <a href="#contact" class="project-btn">
+                View Details
+            </a>
+
+        </div>
+<!-- PROJECT 4 -->
+      
+      <div class="project-card">
+        <div class="project-icon">🏭</div>
+        <h3>Lollipop Factory Setup</h3>
+      </p>
+      <span class="project-status">
+        Account Book </span>
+
+        
+            <a href="#contact" class="project-btn">
+                View Details 
+            </a>
+      </div>
+  
+    </div>
+
+</section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+<section id="contact" class="content-card">
+
+    <p class="contact-intro">
+        Have a question or want to connect?
+        Send me a message!
+    </p>
+
+    <form id="contact-form">
+
+        <div class="form-group">
+            <label for="visitor-name">
+                Your Name
+            </label>
+
+            <input
+                type="text"
+                id="visitor-name"
+                placeholder="Enter your name"
+                required
+                minlength="2"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="visitor-email">
+                Your Email
+            </label>
+
+            <input
+                type="email"
+                id="visitor-email"
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="visitor-message">
+                Your Message
+            </label>
+
+            <textarea
+                id="visitor-message"
+                placeholder="Write your message..."
+                rows="5"
+                required
+                minlength="10"
+            ></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">
+            Send Message
+        </button>
+
+        <p id="form-feedback"
+           aria-live="polite"></p>
+
+    </form>
+
+</section>
+
+        <p>Email: wilayat712@gmail.com </p>
+        <p>Phone# +923426955148</p>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
